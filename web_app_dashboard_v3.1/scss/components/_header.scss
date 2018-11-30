@@ -1,0 +1,24 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  background: $color-prim;
+}
+
+.appName-wrapper {
+  display: flex;
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+.profile {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.profile-image {
+  height: 35px;
+  border-radius: 50%;
+  margin-left: 35px;
+}
