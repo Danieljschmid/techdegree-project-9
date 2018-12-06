@@ -44,7 +44,7 @@
 }
 
 .main-tab {
-  font-weight: bold;
+  color: $dark-grey;
   display: none;
   background: $white;
   padding: 15px;
@@ -60,6 +60,7 @@
   border: none;
   width: 75%;
   padding: 3px 0px 3px 5px;
+  border-radius: 5px 0 0 5px;
   @include mq(medium) {
     max-width: 300px;
   }
@@ -71,11 +72,12 @@ button {
     margin: 10px 0px;
     padding: 10px;
     background: $white;
-    color: $grey;
+    color: $color-prim;
     font-size: 17px;
     border-style: none;
     border-left: none;
     cursor: pointer;
+    border-radius: 0 5px 5px 0;
     @include mq(medium) {
       margin: 10px 35px 10px 0;
     }

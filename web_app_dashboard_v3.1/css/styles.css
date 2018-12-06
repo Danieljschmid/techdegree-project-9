@@ -361,7 +361,7 @@ h3 {
       border-bottom: 1px solid #808080; } }
 
 .main-tab {
-  font-weight: bold;
+  color: #808080;
   display: none;
   background: #fff;
   padding: 15px;
@@ -375,7 +375,8 @@ h3 {
   margin: 10px 0px 10px 0px;
   border: none;
   width: 75%;
-  padding: 3px 0px 3px 5px; }
+  padding: 3px 0px 3px 5px;
+  border-radius: 5px 0 0 5px; }
   @media (min-width: 769px) {
     .search {
       max-width: 300px; } }
@@ -386,11 +387,12 @@ button {
   margin: 10px 0px;
   padding: 10px;
   background: #fff;
-  color: #e4e4e4;
+  color: #9975b9;
   font-size: 17px;
   border-style: none;
   border-left: none;
-  cursor: pointer; }
+  cursor: pointer;
+  border-radius: 0 5px 5px 0; }
   @media (min-width: 769px) {
     button {
       margin: 10px 35px 10px 0; } }
