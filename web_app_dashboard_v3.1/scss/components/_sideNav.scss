@@ -1,12 +1,15 @@
 .side-nav {
   background: $color-sec;
   height: 100%;
-  width: 75px;
+  width: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding-top: 8px;
   float: left;
+  @include mq(medium) {
+    width: 60px;
+  }
 }
 
 .side-nav a {
@@ -22,8 +25,12 @@
 }
 
 .nav-icon {
+  height: 20px;
   opacity: .5;
   transition: all .2s ease-in-out;
+  @include mq(medium) {
+    height: 25px;
+  }
 }
 
 .active,

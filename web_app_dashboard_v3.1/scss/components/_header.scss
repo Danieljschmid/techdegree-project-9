@@ -10,6 +10,22 @@
   padding: 0;
 }
 
+.notification {
+  position: relative;
+ display: inline-block;
+}
+
+.notification .dot {
+  position: absolute;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #7fc57f;
+  top: -2px;
+  right: 0px;
+  padding: 4px 4px;
+  color: $white;
+}
+
 .profile {
   margin-left: auto;
   display: flex;
@@ -66,7 +82,7 @@
   }
 }
 
-button {
+.search-button {
   float: left;
     width: 35px;
     margin: 10px 0px;
@@ -81,4 +97,24 @@ button {
     @include mq(medium) {
       margin: 10px 35px 10px 0;
     }
+}
+
+.alert-box {
+  display: flex;
+  justify-content: space-between;
+  background: $color-prim;
+  border-radius: 5px;
+  width: 80%;
+  color: $white;
+  margin: 10px auto;
+  font-size: 14px;
+  padding: 0 10px;
+  transition: all 1s;
+}
+
+.alert-button {
+  background: none;
+  border: none;
+  color: $white;
+  cursor: pointer;
 }

@@ -301,6 +301,11 @@ template {
 * {
   box-sizing: border-box; }
 
+html,
+body,
+main {
+  height: 100%; }
+
 body {
   font-family: 'Raleway', sans-serif; }
 
@@ -331,6 +336,20 @@ h3 {
   display: flex;
   margin: 0 0 0 20px;
   padding: 0; }
+
+.notification {
+  position: relative;
+  display: inline-block; }
+
+.notification .dot {
+  position: absolute;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #7fc57f;
+  top: -2px;
+  right: 0px;
+  padding: 4px 4px;
+  color: #fff; }
 
 .profile {
   margin-left: auto;
@@ -381,7 +400,7 @@ h3 {
     .search {
       max-width: 300px; } }
 
-button {
+.search-button {
   float: left;
   width: 35px;
   margin: 10px 0px;
@@ -394,18 +413,39 @@ button {
   cursor: pointer;
   border-radius: 0 5px 5px 0; }
   @media (min-width: 769px) {
-    button {
+    .search-button {
       margin: 10px 35px 10px 0; } }
+
+.alert-box {
+  display: flex;
+  justify-content: space-between;
+  background: #9975b9;
+  border-radius: 5px;
+  width: 80%;
+  color: #fff;
+  margin: 10px auto;
+  font-size: 14px;
+  padding: 0 10px;
+  transition: all 1s; }
+
+.alert-button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer; }
 
 .side-nav {
   background: #663096;
   height: 100%;
-  width: 75px;
+  width: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding-top: 8px;
   float: left; }
+  @media (min-width: 769px) {
+    .side-nav {
+      width: 60px; } }
 
 .side-nav a {
   padding: 10px 0;
@@ -418,8 +458,12 @@ button {
   border-left: 2px solid #9975b9; }
 
 .nav-icon {
+  height: 20px;
   opacity: .5;
   transition: all .2s ease-in-out; }
+  @media (min-width: 769px) {
+    .nav-icon {
+      height: 25px; } }
 
 .active,
 .nav-icon:hover {
