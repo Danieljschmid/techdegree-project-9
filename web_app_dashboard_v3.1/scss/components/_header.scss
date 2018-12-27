@@ -1,7 +1,12 @@
 .main-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   background: $color-prim;
+  @include mq(medium) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .appName-wrapper {
@@ -27,16 +32,15 @@
 }
 
 .profile {
-  margin-left: auto;
   display: flex;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .profile-image {
   height: 35px;
   border-radius: 50%;
-  margin-left: 35px;
+  margin-left: 10px;
 }
 
 .page-header {

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
 
     <title>Treehouse App</title>
   </head>
@@ -74,6 +75,32 @@
         <button class="alert-button"><i class="fa fa-times"></i>
       </div>
 
+      <!--  Charts-->
+      <div class="line">
+        <h3 class="chart-header"> Traffic </h3>
+        <div class="daily-line" style="width:95%; height: 300px;">
+          <canvas id="lineChart"></canvas>
+        </div>
+      </div>
+
+<div class="other-charts">
+
+      <div class="bar">
+        <h3 class="chart-header"> Daily Traffic </h3>
+      <div class="daily-bar">
+          <canvas id="barChart"></canvas>
+      </div>
+    </div>
+
+    <div class="pie">
+      <h3 class="chart-header"> Mobile Users </h3>
+    <div class="daily-pie">
+        <canvas id="pieChart"></canvas>
+    </div>
+  </div>
+
+</div>
+
     </main>
 
 
@@ -84,6 +111,6 @@
 
 
 
-    <<script src="js/app.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
   </body>
 </html>
