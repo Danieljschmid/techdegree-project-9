@@ -1,12 +1,15 @@
 .side-nav {
   background: $color-sec;
-  height: 100%;
+  height: 100vh;
   width: 50px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 8px;
   float: left;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
   @include mq(medium) {
     width: 60px;
   }

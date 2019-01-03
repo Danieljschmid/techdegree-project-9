@@ -304,7 +304,7 @@ template {
 html,
 body,
 main {
-  height: 100%; }
+  min-height: 100vh; }
 
 body {
   font-family: 'Raleway', sans-serif; }
@@ -444,13 +444,16 @@ h3 {
 
 .side-nav {
   background: #663096;
-  height: 100%;
+  height: 100vh;
   width: 50px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 8px;
-  float: left; }
+  float: left;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; }
   @media (min-width: 769px) {
     .side-nav {
       width: 60px; } }
@@ -513,7 +516,8 @@ h3 {
     .bar {
       width: 50%;
       margin: 0;
-      border-right: 1px solid #000; } }
+      border-right: 1px solid #000;
+      padding: 15px; } }
 
 .pie {
   display: flex;
@@ -534,5 +538,77 @@ h3 {
 @media (min-width: 769px) {
   .daily-pie {
     width: 70%; } }
+
+.social-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  border-top: 1px solid #000; }
+
+.social-stats-header {
+  color: #808080;
+  margin: 20px auto; }
+
+.social-widgets {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto; }
+  @media (min-width: 769px) {
+    .social-widgets {
+      flex-direction: row; } }
+
+.widget-headings {
+  color: #9975b9;
+  font-weight: bold;
+  margin: 0; }
+
+.twitter,
+.facebook,
+.google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4e4e4;
+  width: 80%;
+  margin: 10px auto;
+  padding: 8px;
+  border: 1px solid #808080; }
+  @media (min-width: 769px) {
+    .twitter,
+    .facebook,
+    .google {
+      width: 30%; } }
+
+.twitter-icon,
+.facebook-icon,
+.google-icon {
+  background: #9975b9;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center; }
+
+.twitter-icon svg,
+.google-icon svg {
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 7px; }
+
+.facebook-icon svg {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto; }
+
+.stats {
+  margin: 10px; }
+
+.stats span {
+  font-size: 3em;
+  font-weight: 100;
+  color: #808080; }
 
 /*# sourceMappingURL=styles.css.map */

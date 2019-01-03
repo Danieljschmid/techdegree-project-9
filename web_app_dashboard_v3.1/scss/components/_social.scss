@@ -1,0 +1,82 @@
+
+.social-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  border-top: 1px solid $black;
+}
+
+.social-stats-header {
+  color: $dark-grey;
+  margin: 20px auto;
+}
+
+.social-widgets {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  @include mq(medium) {
+    flex-direction: row;
+  }
+}
+
+.widget-headings {
+  color: $color-prim;
+  font-weight: bold;
+  margin: 0;
+}
+
+.twitter,
+.facebook,
+.google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $grey;
+  width: 80%;
+  margin: 10px auto;
+  padding: 8px;
+  border: 1px solid $dark-grey;
+  @include mq(medium) {
+    width: 30%;
+  }
+}
+
+.twitter-icon,
+.facebook-icon,
+.google-icon {
+  background: $color-prim;
+  width: 60px;
+  height: 60px;
+  border-radius:  50%;
+  display: flex;
+  align-items: center;
+
+}
+
+.twitter-icon svg,
+.google-icon svg {
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 7px;
+}
+
+.facebook-icon svg {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.stats {
+  margin: 10px;
+}
+
+.stats span {
+  font-size: 3em;
+  font-weight: $font-weight--thin;
+  color: $dark-grey;
+
+}
