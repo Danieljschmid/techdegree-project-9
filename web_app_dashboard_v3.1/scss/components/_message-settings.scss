@@ -1,0 +1,57 @@
+
+.message-user {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+  @include mq(medium) {
+    width: 50%;
+    border-right: 1px solid $black;
+    margin: 0;
+  }
+}
+
+.message-user-heading {
+  color: $dark-grey;
+  margin: 0 auto;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.search-member,
+.message-member,
+.button-send {
+  width: 90%;
+  background-color: #F8F8F8;
+  border: $grey;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+
+.search-member {
+  padding: 5px;
+}
+
+.message-member {
+  padding: 5px 0 0 5px;
+}
+
+.message-member,
+.button-send {
+  margin-top: 20px;
+}
+
+.button-send {
+  background-color: $color-prim;
+  border: none;
+  color: $white;
+  padding: 5px 0;
+  border-radius: 3px;
+}

@@ -1,0 +1,91 @@
+
+.members {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 20px auto 0 auto;
+  border-top: 1px solid $black;
+  @include mq(medium) {
+    flex-direction: row;
+    border-bottom: 1px solid $black;
+  }
+}
+
+.new-members,
+.recent-activity {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  @include mq(medium) {
+    width: 50%;
+    margin: 0;
+    border-right: 1px solid $black;
+  }
+}
+
+.members-headings {
+  color: $dark-grey;
+  font-weight: $font-weight--light;
+  font-size: 1.1em;
+  margin: 20px auto;
+  @include mq(medium) {
+    margin: 20px;
+  }
+}
+
+.member-1,
+.member-2,
+.member-3,
+.member-4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.avatar-1,
+.avatar-2,
+.avatar-3,
+.avatar-4 {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.profile-info {
+  margin-left: 10px;
+}
+
+.member-image-profile {
+  display: flex;
+  border-bottom: 1px solid $black;
+  width: 70%;
+  padding-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.profile-info p {
+  margin: 5px 0;
+  max-width: 330px;
+}
+
+.member-date {
+  margin: 0 0 5px 30px;
+  margin-left: auto;
+  align-self: center;
+}
+
+.arrow {
+  height: 13px;
+  width: 13px;
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  align-self: flex-end;
+  margin: 0 10px 5px 30px;
+  margin-left: auto;
+  align-self: center;
+}

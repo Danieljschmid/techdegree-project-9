@@ -611,4 +611,135 @@ h3 {
   font-weight: 100;
   color: #808080; }
 
+.members {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 20px auto 0 auto;
+  border-top: 1px solid #000; }
+  @media (min-width: 769px) {
+    .members {
+      flex-direction: row;
+      border-bottom: 1px solid #000; } }
+
+.new-members,
+.recent-activity {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto; }
+  @media (min-width: 769px) {
+    .new-members,
+    .recent-activity {
+      width: 50%;
+      margin: 0;
+      border-right: 1px solid #000; } }
+
+.members-headings {
+  color: #808080;
+  font-weight: 300;
+  font-size: 1.1em;
+  margin: 20px auto; }
+  @media (min-width: 769px) {
+    .members-headings {
+      margin: 20px; } }
+
+.member-1,
+.member-2,
+.member-3,
+.member-4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px; }
+
+.avatar-1,
+.avatar-2,
+.avatar-3,
+.avatar-4 {
+  height: 50px;
+  border-radius: 50%; }
+
+.profile-info {
+  margin-left: 10px; }
+
+.member-image-profile {
+  display: flex;
+  border-bottom: 1px solid #000;
+  width: 70%;
+  padding-bottom: 10px;
+  flex-wrap: wrap; }
+
+.profile-info p {
+  margin: 5px 0;
+  max-width: 330px; }
+
+.member-date {
+  margin: 0 0 5px 30px;
+  margin-left: auto;
+  align-self: center; }
+
+.arrow {
+  height: 13px;
+  width: 13px;
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  align-self: flex-end;
+  margin: 0 10px 5px 30px;
+  margin-left: auto;
+  align-self: center; }
+
+.message-user {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px; }
+  @media (min-width: 769px) {
+    .message-user {
+      width: 50%;
+      border-right: 1px solid #000;
+      margin: 0; } }
+
+.message-user-heading {
+  color: #808080;
+  margin: 0 auto; }
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 100%; }
+
+.search-member,
+.message-member,
+.button-send {
+  width: 90%;
+  background-color: #F8F8F8;
+  border: #e4e4e4;
+  border-radius: 3px;
+  margin: 0 auto; }
+
+.search-member {
+  padding: 5px; }
+
+.message-member {
+  padding: 5px 0 0 5px; }
+
+.message-member,
+.button-send {
+  margin-top: 20px; }
+
+.button-send {
+  background-color: #9975b9;
+  border: none;
+  color: #fff;
+  padding: 5px 0;
+  border-radius: 3px; }
+
 /*# sourceMappingURL=styles.css.map */
